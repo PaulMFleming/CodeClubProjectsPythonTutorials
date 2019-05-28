@@ -3,12 +3,26 @@
 # import randint to generate random numbers
 from random import randint
 
+# Get input for players choice
 player = input('rock (r), paper (p) or scissors(s)?')
 
-print(player, 'vs', end=' ')
+# Turn players choice into ascii art
+if player == 'r':
+    player_icon = '0'
 
+elif player == 'p':
+    player_icon ='_'
+
+else:
+    player_icon ='>8'
+
+# Print Player Choice VS Computer Choice in ASCII
+print(player_icon, 'vs', end=' ')
+
+# Computer chooses at random
 chosen = randint(1, 3)
 
+# Convert computer choice into ASCII
 if chosen == 1:
     computer = 'r'
     print('0')
@@ -18,11 +32,10 @@ elif chosen == 2:
     print('_')
 
 else:
-    computer = 's'
+    computer == 's'
     print('>8')
 
-print(computer)
-
+# Calculate Winner
 if player == computer:
     print('DRAW!')
 
