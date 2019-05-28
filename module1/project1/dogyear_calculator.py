@@ -1,5 +1,6 @@
 #!/bin/python3
 
+# Get age, convert age to number, calculate dog years
 age = input("How old are you? ")
 age = int(age)
 dog_years = age * 9

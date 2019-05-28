@@ -1,5 +1,6 @@
 #!/bin/python3
 
+# Use multiplication to draw patterns
 print('Here is a scarf:')
 print('~#' * 10)
 print('#~' * 10)
